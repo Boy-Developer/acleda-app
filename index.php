@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-// include '_bootstrap.php';
+include '_bootstrap.php';
 ?>
 <html>
     <head>
