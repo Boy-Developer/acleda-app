@@ -20,7 +20,7 @@ error_reporting('all');
 
 // pull environment vars
 $merchantId = getenv('1230002T');
-$password = getenv('11d056434d9e3177369001043b139ddb');
+$password = getenv('a27a1e730ab5ed26b16d3d8c3269f1ea');
 $region = getenv('GATEWAY_REGION');
 $apiVersion = getenv(49);
 
