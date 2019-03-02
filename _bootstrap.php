@@ -35,7 +35,7 @@ if (strcasecmp($merchantIdPrefix, $merchantIdPrefix) != 0) {
 }
 
 // get regional url prefix
-$prefix = 'test-';
+$prefix = 'MTF';
 if (strcasecmp($region, "ASIA_PACIFIC") == 0) {
     $prefix = 'ap-';
 } else if (strcasecmp($region, "EUROPE") == 0) {
