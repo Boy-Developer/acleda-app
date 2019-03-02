@@ -51,9 +51,9 @@ if (strcasecmp($region, "ASIA_PACIFIC") != 0) {
 }
 
 // validate apiVersion is above minimum
-if (intval($apiVersion) < 39) {
-    error(500, "API Version must be >= 39");
-}
+// if (intval($apiVersion) < 39) {
+//     error(500, "API Version must be >= 39");
+// }
 
 // build api endpoint url
 $gatewayUrl = "https://${prefix}gateway.mastercard.com/api/rest/version/${apiVersion}/merchant/${merchantId}";
