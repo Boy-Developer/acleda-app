@@ -30,32 +30,32 @@ $region = getenv('ASIA_PACIFIC');
 $apiVersion = getenv(49);
 
 // merchant id must be TEST
-$merchantIdPrefix = substr($merchantId, 0, 4);
-if (strcasecmp($merchantIdPrefix, "1230") != 0) {
-    error(500, 'Only TEST merchant IDs should be used with this software');
-}
+// $merchantIdPrefix = substr($merchantId, 0, 4);
+// if (strcasecmp($merchantIdPrefix, "1230") != 0) {
+//     error(500, 'Only TEST merchant IDs should be used with this software');
+// }
 
 // get regional url prefix
 //$prefix = 'test-';
-$prefix = 'ASIA_PACIFIC';
-if (strcasecmp($region, "ASIA_PACIFIC") == 0) {
-    $prefix = 'ap-';
-} else if (strcasecmp($region, "EUROPE") == 0) {
-    $prefix = 'eu-';
-} else if (strcasecmp($region, "NORTH_AMERICA") == 0) {
-    $prefix = 'na-';
-} else if (strcasecmp($region, "MTF") == 0) {
-    $prefix = 'test-';
-} else if (strcasecmp($region, "QA01") == 0) {
-    $prefix = 'qa01.';
-} else {
-    error(500, "Invalid region provided. Valid values include ASIA_PACIFIC, EUROPE, NORTH_AMERICA, MTF");
-}
+// $prefix = 'ASIA_PACIFIC';
+// if (strcasecmp($region, "ASIA_PACIFIC") == 0) {
+//     $prefix = 'ap-';
+// } else if (strcasecmp($region, "EUROPE") == 0) {
+//     $prefix = 'eu-';
+// } else if (strcasecmp($region, "NORTH_AMERICA") == 0) {
+//     $prefix = 'na-';
+// } else if (strcasecmp($region, "MTF") == 0) {
+//     $prefix = 'test-';
+// } else if (strcasecmp($region, "QA01") == 0) {
+//     $prefix = 'qa01.';
+// } else {
+//     error(500, "Invalid region provided. Valid values include ASIA_PACIFIC, EUROPE, NORTH_AMERICA, MTF");
+// }
 
 // validate apiVersion is above minimum
-if (intval($apiVersion) < 39) {
-    error(500, "API Version must be >= 39");
-}
+// if (intval($apiVersion) < 39) {
+//     error(500, "API Version must be >= 39");
+// }
 
 // build api endpoint url
 $gatewayUrl = "https://${prefix}gateway.mastercard.com/api/rest/version/${apiVersion}/merchant/${merchantId}";
