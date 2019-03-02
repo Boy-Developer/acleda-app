@@ -31,8 +31,8 @@ $apiVersion = getenv('GATEWAY_API_VERSION');
 // merchant id must be TEST
 $merchantIdPrefix = substr($merchantId, 0, 4);
 if (strcasecmp($merchantIdPrefix, "test") != 0) {
-    error(500, $merchantIdPrefix);
-    //'Only TEST merchant IDs should be used with this software');
+    echo $merchantIdPrefix;
+    error(500, 'Only TEST merchant IDs should be used with this software');
 }
 
 // get regional url prefix
