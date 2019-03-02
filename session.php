@@ -45,9 +45,9 @@ if (intercept('POST')) {
         <pre><code>Content-Type: application/json
 Payload:
 {
-    "apiVersion": "<?php echo $apiVersion; ?>",
+    "apiVersion": "49",
     "gatewayResponse": {
-        "merchant": "<?php echo $merchantId; ?>",
+        "merchant": "1230058T",
         "result": "SUCCESS",
         "session": {
             "id": "SESSION0000000000000000000000",
