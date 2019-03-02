@@ -19,12 +19,17 @@
 error_reporting('all');
 
 // pull environment vars
-$merchantId = getenv('TEST');
+//$merchantId = getenv('TEST');
+//$password = getenv('GATEWAY_API_PASSWORD');
+//$region = getenv('GATEWAY_REGION');
+//$apiVersion = getenv('GATEWAY_API_VERSION');
+$merchantId = getenv('1230002T');
 $password = getenv('GATEWAY_API_PASSWORD');
 $region = getenv('GATEWAY_REGION');
 $apiVersion = getenv('GATEWAY_API_VERSION');
 
 // merchant id must be TEST
+error(500,$merchantId)
 $merchantIdPrefix = substr($merchantId, 0, 4);
 if (strcasecmp($merchantIdPrefix, "test") != 0) {
     error(500, 'Only TEST merchant IDs should be used with this software');
