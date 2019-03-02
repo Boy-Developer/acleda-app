@@ -24,9 +24,9 @@ error_reporting('all');
 //$region = getenv('GATEWAY_REGION');
 //$apiVersion = getenv('GATEWAY_API_VERSION');
 $merchantId = getenv('1230002T');
-$password = getenv('GATEWAY_API_PASSWORD');
-$region = getenv('GATEWAY_REGION');
-$apiVersion = getenv('GATEWAY_API_VERSION');
+$password = getenv('a27a1e730ab5ed26b16d3d8c3269f1ea');
+$region = getenv('MTF');
+$apiVersion = getenv('49');
 
 // merchant id must be TEST
 $merchantIdPrefix = substr($merchantId, 0, 4);
