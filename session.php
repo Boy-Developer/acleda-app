@@ -45,7 +45,7 @@ if (intercept('POST')) {
         <pre><code>Content-Type: application/json
 Payload:
 {
-    "apiVersion": "49",
+    "apiVersion": "50",
     "gatewayResponse": {
         "merchant": "1230058T",
         "result": "SUCCESS",
