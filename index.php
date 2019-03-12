@@ -17,15 +17,15 @@
  */
 
 include '_bootstrap.php';
-$merchantId1 = getenv('GATEWAY_MERCHANT_ID');
-$password1= getenv('GATEWAY_API_PASSWORD');
-$region1 = getenv('GATEWAY_REGION');
-$apiVersion1 = getenv('GATEWAY_API_VERSION');
+// $merchantId1 = getenv('GATEWAY_MERCHANT_ID');
+// $password1= getenv('GATEWAY_API_PASSWORD');
+// $region1 = getenv('GATEWAY_REGION');
+// $apiVersion1 = getenv('GATEWAY_API_VERSION');
 
-echo $merchantId1;
-echo $password1;
-echo $region1;
-echo $apiVersion1;
+// echo $merchantId1;
+// echo $password1;
+// echo $region1;
+// echo $apiVersion1;
 ?>
 <html>
     <head>
