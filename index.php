@@ -15,16 +15,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-$merchantId = getenv('GATEWAY_MERCHANT_ID');
-$password = getenv('GATEWAY_API_PASSWORD');
-$region = getenv('GATEWAY_REGION');
-$apiVersion = getenv('GATEWAY_API_VERSION');
-echo $merchantId.'<br>'.
-    $password.'<br>'.
-    $region.'<br>'.
-    $apiVersion
+//$merchantId = getenv('GATEWAY_MERCHANT_ID');
+//$password = getenv('GATEWAY_API_PASSWORD');
+//$region = getenv('GATEWAY_REGION');
+//$apiVersion = getenv('GATEWAY_API_VERSION');
+//echo $merchantId.'<br>'.
+//    $password.'<br>'.
+//    $region.'<br>'.
+//    $apiVersion
 
-//include '_bootstrap.php';
+include '_bootstrap.php';
 ?>
 <html>
     <head>
