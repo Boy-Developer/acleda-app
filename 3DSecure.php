@@ -67,7 +67,7 @@ Payload:
     	"currency": "USD"
     },
     "session": {
-    	"id": "SESSION0000000000000000000000"
+    	"id": "SESSION000000000000000000000000"
     }
 }</code></pre>
 
