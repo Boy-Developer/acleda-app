@@ -42,6 +42,7 @@ if (intercept('POST')) {
         <h5>Sample Request</h5>
         <pre><code>POST <?php echo $pageUrl; ?></code></pre>
         <h5>Sample Response</h5>
+        <?php echo $password?><br>
         <pre><code>Content-Type: application/json
 Payload:
 {
