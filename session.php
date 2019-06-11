@@ -43,6 +43,7 @@ if (intercept('POST')) {
         <pre><code>POST <?php echo $pageUrl; ?></code></pre>
         <h5>Sample Response</h5>
         <?php echo $password?><br>
+        <?php echo $merchantId?><br>
         <pre><code>Content-Type: application/json
 Payload:
 {
