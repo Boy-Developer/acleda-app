@@ -19,14 +19,14 @@
 error_reporting('all');
 
 // pull environment vars
-$merchantId = getenv('GATEWAY_MERCHANT_ID');
-$password = getenv('GATEWAY_API_PASSWORD');
-$region = getenv('GATEWAY_REGION');
-$apiVersion = getenv('GATEWAY_API_VERSION');
+$merchantId = 'TEST1230002T';//getenv('GATEWAY_MERCHANT_ID');
+$password = '11d056434d9e3177369001043b139ddb';//getenv('GATEWAY_API_PASSWORD');
+$region = 'MTF';//getenv('GATEWAY_REGION');
+$apiVersion = '';//getenv('GATEWAY_API_VERSION');
 
 // merchant id must be TEST
 $merchantIdPrefix = substr($merchantId, 0, 4);
-if (strcasecmp($merchantIdPrefix, "1230") != 0) {
+if (strcasecmp($merchantIdPrefix, "test") != 0) {
     error(500, 'Only TEST merchant IDs should be used with this software');
 }
 
@@ -39,7 +39,7 @@ if (strcasecmp($region, "ASIA_PACIFIC") == 0) {
 } else if (strcasecmp($region, "NORTH_AMERICA") == 0) {
     $prefix = 'na-';
 } else if (strcasecmp($region, "MTF") == 0) {
-    $prefix = 'test-';
+    $prefix = 'test-acleda.mtf.';
 } else if (strcasecmp($region, "QA01") == 0) {
     $prefix = 'qa01.';
 } else {
