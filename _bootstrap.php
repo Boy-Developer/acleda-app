@@ -22,7 +22,7 @@ error_reporting('all');
 $merchantId = 'TEST1230002T';//getenv('GATEWAY_MERCHANT_ID');
 $password = '11d056434d9e3177369001043b139ddb';//getenv('GATEWAY_API_PASSWORD');
 $region = 'MTF';//getenv('GATEWAY_REGION');
-$apiVersion = '';//getenv('GATEWAY_API_VERSION');
+$apiVersion = 47;//getenv('GATEWAY_API_VERSION');
 
 // merchant id must be TEST
 $merchantIdPrefix = substr($merchantId, 0, 4);
