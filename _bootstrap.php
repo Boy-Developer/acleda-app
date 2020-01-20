@@ -26,7 +26,7 @@ $apiVersion = getenv('GATEWAY_API_VERSION');
 
 // merchant id must be TEST
 $merchantIdPrefix = substr($merchantId, 0, 4);
-if (strcasecmp($merchantIdPrefix, "7700") != 0) {
+if (strcasecmp($merchantIdPrefix, "4132") != 0) {
     error(500, 'Only TEST merchant IDs should be used with this software');
 }
 
@@ -52,7 +52,8 @@ if (intval($apiVersion) < 39) {
 }
 
 // build api endpoint url
-$gatewayUrl = "https://${prefix}gateway.mastercard.com/api/rest/version/${apiVersion}/merchant/${merchantId}";
+//$gatewayUrl = "https://${prefix}gateway.mastercard.com/api/rest/version/${apiVersion}/merchant/${merchantId}";
+$gatewayUrl = "https://${prefix}acleda.gateway.mastercard.com/api/nvp/version/${apiVersion}/merchant/${merchantId}";
 
 // parse query string
 $query = array();
