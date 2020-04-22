@@ -36,16 +36,12 @@ if (intercept('POST')) {
             'paRes' => $post[$paResParam]
         )
     );
-    
-    echo $_POST;
-    print_r($post);
-    print_r($data);
 
     // decode paRes by calling Process ACS Result to obtain result
-    //$response = doRequest($gatewayUrl . '/3DSecureId/' . $threeDSecureId, 'POST', json_encode($data), $headers);
+    $response = doRequest($gatewayUrl . '/3DSecureId/' . $threeDSecureId, 'POST', json_encode($data), $headers);
 
     // build mobile redirect
-    //doRedirect("gatewaysdk://3dsecure?acsResult=" . urlencode($response));
+    doRedirect("gatewaysdk://3dsecure?acsResult=" . urlencode($response));
 }
 
 ?>
