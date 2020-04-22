@@ -37,6 +37,8 @@ if (intercept('POST')) {
         )
     );
     
+    echo $_POST;
+    print_r($post);
     print_r($data);
 
     // decode paRes by calling Process ACS Result to obtain result
